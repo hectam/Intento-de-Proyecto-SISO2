@@ -1,0 +1,3 @@
+mcs -r:Mono.Fuse.dll -r:Mono.Posix.dll ./HelloFS.cs -out:HelloFs.exe
+mono HelloFs.exe ./device/
+fusermount -u ./device
